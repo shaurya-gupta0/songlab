@@ -6,10 +6,13 @@ import java.io.FileNotFoundException;
 public class dataReader {
     public void read(){
         Scanner in;
+        int num = 1;
         try{
-            in = new Scanner (new File("songs 2025-2026.csv"));
-            if(in.hasNext()){
+            in = new Scanner (new File("songs 2025-2026 ANSI.csv"));
+            while (in.hasNext()){
+                System.out.print(num + ": ");
                 System.out.println(in.nextLine()); 
+                num++;
             }
             in.close();
         }
