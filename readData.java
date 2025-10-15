@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.io.File;
-import java.io.IOException;
+// import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class dataReader {
@@ -11,7 +11,8 @@ public class dataReader {
             in = new Scanner (new File("songs 2025-2026 ANSI.csv"));
             while (in.hasNext()){
                 System.out.print(num + ": ");
-                System.out.println(in.nextLine()); 
+                System.out.println(in.nextLine());
+                //.split(";")[2]
                 num++;
             }
             in.close();
